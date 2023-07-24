@@ -19,11 +19,11 @@ function Index() {
       </div>
       <h1>{"Vite + React"}</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <button data-cy="counter-btn" onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
         <p>
-          Try navigate to <Link to={`/another-page`}>another page</Link> or{" "}
+          Try navigate to <Link data-cy="link-to-another-page" to={`/another-page`}>another page</Link> or{" "}
           <Link to={`/yet-another-page`}>wherever you like</Link>
         </p>
       </div>
