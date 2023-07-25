@@ -8,7 +8,7 @@ function Index() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="max-w-3xl mx-auto px-8 py-24 space-y-4">
+    <main className="max-w-3xl mx-auto px-8 py-24 space-y-4">
       <div className="flex justify-center gap-x-8">
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="h-24" alt="Vite logo" />
@@ -29,14 +29,14 @@ function Index() {
           Try navigate to{" "}
           <Link
             data-cy="link-to-another-page"
-            className="text-orange-700 hover:text-orange-900 underline"
+            className="text-orange-800 hover:text-orange-900 underline"
             to={`/another-page`}
           >
             another page
           </Link>{" "}
           or{" "}
           <Link
-            className="text-orange-700 hover:text-orange-900 underline"
+            className="text-orange-800 hover:text-orange-900 underline"
             to={`/yet-another-page`}
           >
             wherever you like
@@ -46,7 +46,7 @@ function Index() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-    </div>
+    </main>
   );
 }
 
